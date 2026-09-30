@@ -1,0 +1,199 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 430,
+      "y": 55,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "buku = 3; pulpen = 2; flashdisk = 1",
+      "x": 346,
+      "y": 161,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "harga_buku =25000 * 3",
+      "x": 252,
+      "y": 277,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 4,
+      "type": "process",
+      "text": "harga_pulpen = 8000 * 2",
+      "x": 522,
+      "y": 316,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "harga_flashdisk = 75000 * 1",
+      "x": 614,
+      "y": 445,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 6,
+      "type": "input",
+      "text": "saldo = 200000",
+      "x": 634,
+      "y": 121,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "process",
+      "text": "total_awal = 75000 + 16000 + 75000",
+      "x": 370,
+      "y": 483,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "diskon =\n0.10 * 166000",
+      "x": 506,
+      "y": 623,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "total_setelah_diskon = 166000 - 16600",
+      "x": 743,
+      "y": 666,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "pajak = 0.11 * 149400",
+      "x": 316,
+      "y": 720,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "total_setelah_pajak = 149400 + 16434",
+      "x": 661,
+      "y": 800,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 14,
+      "type": "end",
+      "text": "End",
+      "x": 526,
+      "y": 1139,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "uang_kembalian = saldo-total_setelah_pajak",
+      "x": 358,
+      "y": 867,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 16,
+      "type": "output",
+      "text": "uang_kembalian",
+      "x": 627,
+      "y": 957,
+      "w": 190,
+      "h": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 14,
+      "branch": null
+    }
+  ],
+  "nextId": 17
+}
