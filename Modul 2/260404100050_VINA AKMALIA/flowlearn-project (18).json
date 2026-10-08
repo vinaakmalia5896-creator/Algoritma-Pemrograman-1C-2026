@@ -1,0 +1,378 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 124,
+      "y": 13,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "kode",
+      "x": 364,
+      "y": 33,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 4,
+      "type": "output",
+      "text": "digit1, digit2, digit3",
+      "x": 62,
+      "y": 110,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "pelacak = digit1 * digit3",
+      "x": 418,
+      "y": 159,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 6,
+      "type": "output",
+      "text": "pelacak",
+      "x": 150,
+      "y": 269,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "decision",
+      "text": "digit2 % 2 = 0",
+      "x": 589,
+      "y": 242,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "pelacak = pelacak - digit2",
+      "x": 50,
+      "y": 361,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "pelacak = pelacak + 25",
+      "x": 836,
+      "y": 358,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "output",
+      "text": "\"pelacak\"",
+      "x": 417,
+      "y": 386,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 11,
+      "type": "decision",
+      "text": "pelacak % 3 = 0",
+      "x": 328,
+      "y": 484,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "pelacak = pelacak / 3",
+      "x": 28,
+      "y": 529,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "pelacak = pelacak * 2",
+      "x": 714,
+      "y": 472,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 14,
+      "type": "output",
+      "text": "\"pelacak\"",
+      "x": 429,
+      "y": 622,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 15,
+      "type": "decision",
+      "text": "pelacak > 50",
+      "x": 688,
+      "y": 694,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 16,
+      "type": "decision",
+      "text": "pelacak > 20",
+      "x": 446,
+      "y": 844,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 17,
+      "type": "output",
+      "text": "\"kategori A\"",
+      "x": 131,
+      "y": 686,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 18,
+      "type": "output",
+      "text": "\"kategori B\"",
+      "x": 115,
+      "y": 819,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 19,
+      "type": "output",
+      "text": "\"pasword ditolak\"",
+      "x": 824,
+      "y": 915,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 20,
+      "type": "decision",
+      "text": "pelacak % 2 = 0",
+      "x": 385,
+      "y": 1035,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 21,
+      "type": "output",
+      "text": "\"siklus genap\"",
+      "x": 85,
+      "y": 1017,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 22,
+      "type": "output",
+      "text": "\"siklus ganjil\"",
+      "x": 661,
+      "y": 1159,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 24,
+      "type": "end",
+      "text": "End",
+      "x": 259,
+      "y": 1227,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 25,
+      "type": "process",
+      "text": "digit1 = kode / 100",
+      "x": 645,
+      "y": 10,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 26,
+      "type": "process",
+      "text": "digit3 = kode % 10",
+      "x": 633,
+      "y": 97,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 28,
+      "type": "process",
+      "text": "digit2 = (kode / 10 % 10)",
+      "x": 907,
+      "y": 16,
+      "w": 180,
+      "h": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": "true"
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "branch": "false"
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": "true"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": "false"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": "false"
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "branch": "true"
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "branch": "true"
+    },
+    {
+      "from": 16,
+      "to": 19,
+      "branch": "false"
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "branch": "false"
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "branch": "true"
+    },
+    {
+      "from": 17,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "branch": null
+    },
+    {
+      "from": 21,
+      "to": 24,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 25,
+      "branch": null
+    },
+    {
+      "from": 25,
+      "to": 28,
+      "branch": null
+    },
+    {
+      "from": 28,
+      "to": 26,
+      "branch": null
+    },
+    {
+      "from": 26,
+      "to": 4,
+      "branch": null
+    }
+  ],
+  "nextId": 30
+}
